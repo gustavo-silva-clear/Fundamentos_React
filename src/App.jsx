@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css'
 
+import Familia from "./components/basicos/Familia";
 import Card from "./components/Layout/Card";
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
@@ -17,19 +18,25 @@ export default props => {
 
             <div className="Cards">
 
-                <Card titulo="Desafio Aleatório!">
+                <Card titulo="Componentes filhos" color="#bbc5f8">
+
+                 <Familia></Familia>
+
+                </Card>
+
+                <Card titulo="Desafio Aleatório!" color="#99B898">
 
                     <Aleatorio min={1} max={100} />
 
                 </Card>
 
-                <Card titulo="Fragmento">
+                <Card titulo="Fragmento" color="#F9D423">
 
                     <Fragmento />
 
                 </Card>
 
-                <Card titulo="Parameters">
+                <Card titulo="Parameters" color="#FC913A">
 
 
                     <ComParametro
@@ -39,7 +46,7 @@ export default props => {
 
                 </Card>
 
-                <Card titulo="Desafio Aleatório!">
+                <Card titulo="Desafio Aleatório!" color="#2A363B">
 
                     <Primeiro></Primeiro>
 
