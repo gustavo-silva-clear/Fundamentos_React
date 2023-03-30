@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css'
 
 import Card from "./components/Layout/Card";
 import Primeiro from './components/basicos/Primeiro'
@@ -10,40 +11,42 @@ export default props => {
 
     return (
 
-        <div id="app">
+        <div className="App">
 
             <h1>Fundamentos React</h1>
 
-            <Card titulo="Desafio Aleatório!">
+            <div className="Cards">
 
-                <Aleatorio min={1} max={100} />
+                <Card titulo="Desafio Aleatório!">
 
-            </Card>
+                    <Aleatorio min={1} max={100} />
 
-            <Card titulo="Fragmento">
+                </Card>
 
-                <Fragmento />
+                <Card titulo="Fragmento">
 
-            </Card>
+                    <Fragmento />
 
-            <Card titulo="Parameters">
+                </Card>
 
-
-                <ComParametro
-                    titulo="1ª carro"
-                    car="Mazda RX-7" motor="13B-REW rotativo" litros={1.4}
-                />
-
-            </Card>
-
-            <Card titulo="Desafio Aleatório!">
-
-                <Primeiro></Primeiro>
-
-            </Card>
+                <Card titulo="Parameters">
 
 
+                    <ComParametro
+                        titulo="1ª carro"
+                        car="Mazda RX-7" motor="13B-REW rotativo" litros={1.4}
+                    />
 
+                </Card>
+
+                <Card titulo="Desafio Aleatório!">
+
+                    <Primeiro></Primeiro>
+
+                </Card>
+
+
+            </div>
 
         </div>
 
