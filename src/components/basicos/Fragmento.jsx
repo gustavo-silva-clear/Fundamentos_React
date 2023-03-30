@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Fragmento(Props) {
+export default function Fragmento(props) {
 
     return (
 
