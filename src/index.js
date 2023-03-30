@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
+import Fragmento from './components/basicos/Fragmento'
 
 ReactDOM.render(
-    <div id = "app">
+    <>
         <Primeiro></Primeiro>
         <ComParametro
         titulo = "1º carro"
@@ -17,9 +18,11 @@ ReactDOM.render(
         /> 
          <ComParametro
         titulo = "3ª carro"
-        car = "Mazda RX-7 FD" motor = "13B-REW rotativo" litros = {1.4}
+        car = "Mazda RX-7" motor = "13B-REW rotativo" litros = {1.4}
         />
-    </div>,
+
+        <Fragmento />
+    </>,
 
     document.getElementById('root')
 )

@@ -4,6 +4,7 @@ export default function ComParametro(props) {
 
     const status = props.litros >= 2 ? 'é forte' : 'da pra melhorar'
 
+    const up = Math.ceil(props.litros)
     return (
 
         <div>
@@ -15,7 +16,7 @@ export default function ComParametro(props) {
                 possui um motor
                 <strong> {props.motor} </strong>
                 que tem a litragem de 
-                <strong> {props.litros} </strong> 
+                <strong> {up} </strong>
                 litros e
                  <strong> { status } </strong>
 
