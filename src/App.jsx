@@ -1,5 +1,8 @@
 import React from "react";
 import './App.css'
+
+
+import Contador from "./components/contador/Contador";
 import Input from "./components/formulario/Input";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import DiretaPai from "./components/comunicacao/DiretaPai"
@@ -25,10 +28,15 @@ export default props => {
 
             <div className="Cards">
 
+                <Card titulo="#12 Contador" color="#2A363B">
+
+                  <Contador numeroInicial = {10}></Contador>
+
+                </Card>
 
                 <Card titulo="#11 Componete controlado (input)" color="#2A363B">
 
-                  <Input></Input>
+                    <Input></Input>
 
                 </Card>
 
