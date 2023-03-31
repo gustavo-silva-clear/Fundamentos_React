@@ -5,9 +5,9 @@ export default props => {
 return (
 
     <div>
-        <span>{props.texto}</span>
-        <span>{props.numero}</span>
-        <span>{props.bool ? ' Verdadeiro' : 'False'}!</span>
+        <span>{props.nome} com  </span>
+        <span>{props.idade} anos</span>
+        <span>{props.nerd ? ' é nerd' : ' não é nerd'}!</span>
     </div>
 )
 

@@ -1,7 +1,8 @@
 import React from "react";
 import './App.css'
 
-import DiretaPai from"./components/comunicacao/DiretaPai"
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import DiretaPai from "./components/comunicacao/DiretaPai"
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import Produtos from "./components/repeticao/TabelaProdutos";
@@ -24,18 +25,24 @@ export default props => {
 
             <div className="Cards">
 
-                <Card titulo="#09 Comunicação Direta" color="#bab32e">
-                    
-                   <DiretaPai></DiretaPai>
-                
+                <Card titulo="#10 Comunicação indireta" color="#2A363B">
+
+                    <IndiretaPai></IndiretaPai>
+
                 </Card>
 
-                <Card titulo="#08 renderização funcional" color="#bab32e">
+                <Card titulo="#09 Comunicação Direta" color="#FC913A">
+
+                    <DiretaPai></DiretaPai>
+
+                </Card>
+
+                <Card titulo="#08 renderização funcional" color="#feb32e">
                     <ParOuImpar numero={21}></ParOuImpar>
                     <UsuarioInfo usuario={{ nome: 'Gusta' }} />
                 </Card>
 
-                <Card titulo="#07 deafio Repetição" color="#bab32e">
+                <Card titulo="#07 deafio Repetição" color="#bbc5f8">
                     <Produtos />
                 </Card>
 
