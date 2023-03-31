@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css'
 
+import DiretaPai from"./components/comunicacao/DiretaPai"
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import Produtos from "./components/repeticao/TabelaProdutos";
@@ -23,16 +24,20 @@ export default props => {
 
             <div className="Cards">
 
-            <Card titulo="#08 renderização funcional" color="#bab32e">
-                    <ParOuImpar numero = {21}></ParOuImpar>
-                    <UsuarioInfo usuario = {{nome : 'Gusta'}} />
+                <Card titulo="#09 Comunicação Direta" color="#bab32e">
+                    
+                   <DiretaPai></DiretaPai>
+                
                 </Card>
 
+                <Card titulo="#08 renderização funcional" color="#bab32e">
+                    <ParOuImpar numero={21}></ParOuImpar>
+                    <UsuarioInfo usuario={{ nome: 'Gusta' }} />
+                </Card>
 
                 <Card titulo="#07 deafio Repetição" color="#bab32e">
                     <Produtos />
                 </Card>
-
 
                 <Card titulo="#06 Repetição" color="#24788f">
 
