@@ -2,6 +2,7 @@ import React from "react";
 import './App.css'
 
 
+import Mega from "./components/megaSena/Mega";
 import Contador from "./components/contador/Contador";
 import Input from "./components/formulario/Input";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
@@ -28,9 +29,15 @@ export default props => {
 
             <div className="Cards">
 
+                <Card titulo="#13 Mega Sena" color="#3b8132">
+
+                   <Mega qtde = {8}></Mega>
+
+                </Card>
+
                 <Card titulo="#12 Contador" color="#2A363B">
 
-                  <Contador numeroInicial = {10}></Contador>
+                    <Contador numeroInicial={10}></Contador>
 
                 </Card>
 
